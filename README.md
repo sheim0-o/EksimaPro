@@ -1,31 +1,31 @@
-# Запуск:
-(создание виртуального окружения при необходимости: python -m venv .venv     и активация .venv\Scripts\activate)
-pip install -r requirements.txt
+# Как запускать:
+1) (создание виртуального окружения при необходимости: "python -m venv .venv" и активация ".venv\Scripts\activate")
+2) pip install -r requirements.txt
+3) Запуск:
 
-## CLI версия (сохранение в CSV)
+  3.1) cli (сохранение в CSV)
+
 python main.py --max 10 --output tenders
 
-## FastAPI сервер
+(--max и --output необязательные параметры)
+
+  3.2) FastAPI сервер
+
 uvicorn main:app --reload
 
 
 # Технологии
-## Парсинг:
+1) Парсинг:
 bs4 (BeautifulSoup4), requests
-
-## API:
+2) API:
 FastAPI
-
-## CSV экспорт:
+3) CSV экспорт:
 pandas
-
-## Конфиг:
+4) Конфиг:
 dotenv
-
-## CLI: 
+5) CLI: 
 click
-
-## Работа со значениями:
+6) Работа со значениями:
 re, datetime
 
 
